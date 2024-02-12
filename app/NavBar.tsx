@@ -12,6 +12,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaBug } from "react-icons/fa";
+import { Spinner } from "@/app/components";
 
 const NavBar = () => {
   return (
@@ -61,7 +62,7 @@ const NavLinks = () => {
 const AuthStatus = () => {
   const { status, data: session } = useSession();
 
-  if (status === "loading") return null;
+  if (status === "loading") return <Spinner />;
 
   if (status === "unauthenticated")
     return (
