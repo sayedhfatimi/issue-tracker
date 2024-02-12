@@ -4,9 +4,20 @@ import { Table } from "@radix-ui/themes";
 import IssueActions from "./IssueActions";
 import authOptions from "@/app/auth/authOptions";
 import { getServerSession } from "next-auth";
+import { Status } from "@prisma/client";
 
-const IssuesPage = async () => {
-  const issues = await prisma.issue.findMany();
+const IssuesPage = async ({
+  searchParams,
+}: {
+  searchParams: { status: Status };
+}) => {
+  const status = Object.values(Status).includes(searchParams.status)
+    ? searchParams.status
+    : undefined;
+
+  const issues = await prisma.issue.findMany({
+    where: { status },
+  });
 
   const session = await getServerSession(authOptions);
 

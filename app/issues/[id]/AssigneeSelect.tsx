@@ -14,12 +14,11 @@ const AssigneeSelect = ({ issue }: { issue: Issue }) => {
   if (error) return null;
 
   const assignIssue = (userId: string) => {
-    let val;
-    userId === "unassigned" ? (val = null) : (val = userId);
+    let assignedToUserId = userId === "unassigned" ? null : userId;
 
     axios
       .patch(`/api/issues/${issue.id}`, {
-        assignedToUserId: val,
+        assignedToUserId,
       })
       .catch(() => {
         toast.error("Changes could not be saved.");
