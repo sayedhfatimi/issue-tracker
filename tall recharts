@@ -1,0 +1,58 @@
+[33mfa7c3e0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m add column sorting
+[33mb567df3[m filter issues
+[33m477d48a[m build issue list filter component
+[33m2596e88[m refactor AssigneeSelect component
+[33m3b5600d[m add react-hot-toast for notifications
+[33m3a306ce[m implement assigning issue to user
+[33mdfc9773[m implement assign issues in API
+[33m97ccc20[m fetch users with react-query
+[33m4226861[m setup react-query
+[33m00b1690[m get users from db, populate assignee select component
+[33m49d1df0[m add user select component
+[33mc0f2b89[m secure user endpoints
+[33m12b1f76[m add loading spinner to login link
+[33ma9bf491[m refactor NavBar
+[33m0405cb8[m display current user in dropdown
+[33ma343fa4[m fix NavBar
+[33m779bab1[m implement login and logout
+[33mca80334[m add prisma adapter
+[33m44ecc73[m configure google provider
+[33m094ebf7[m setup next-auth
+[33mdd60931[m remove duplicate loading skeletons
+[33m0832764[m improve ux
+[33m91c08bf[m handle errors
+[33m1b3b638[m delete an issue
+[33m8f289e0[m build API for deleting issues
+[33m5ae716c[m show a confirmation dialog
+[33m97671f6[m add delete issue button
+[33m727cf65[m improve loading experience
+[33md219d41[m fix caching issues
+[33m78c10e4[m update issues
+[33m247fa7e[m build API for updating issues
+[33m9617b5a[m build edit issue page
+[33m47e1581[m Refactor: Apply SRP
+[33m6ad4898[m organize imports
+[33m6ce8eb0[m add loading skeletons
+[33mbc5a380[m build a styled link component
+[33me992e8b[m add react-markdown
+[33m26cead6[m style the issue details page
+[33m8887d68[m show issue details
+[33mf773738[m add loading skeletons
+[33mb004006[m build issue status badge
+[33m30a85b1[m implement issues table
+[33m578cec9[m refactor: move inline function
+[33m5ccef08[m add a spinner
+[33mfcc1c5d[m extract ErrorMessage component
+[33m18db0b0[m implement client side validation
+[33me37bf0e[m handle errors
+[33m17ed336[m add react-hook-form, handle form submission
+[33m06edaa0[m add React-SimpleMDE-Editor
+[33m7fb5e40[m build new issue page
+[33m28351f1[m add radix ui
+[33m4602105[m build the API for creating issues
+[33m3ff0898[m create issue model
+[33mb654335[m set up prisma
+[33meb734d9[m add classnames to dynamically style active link
+[33m87ef307[m add react-icons, build NavBar
+[33m4f4b1ec[m Initial Commit
+[33m500ca52[m Initial commit from Create Next App
